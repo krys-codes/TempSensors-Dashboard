@@ -1,0 +1,26 @@
+{
+  "name": "node-react-backend",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "server": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "agentkeepalive": "^4.2.0",
+    "axios": "^0.24.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.1",
+    "got": "^11.8.2",
+    "http-proxy-middleware": "^2.0.1",
+    "nodemon": "^2.0.14",
+    "socket.io": "^4.4.1"
+  },
+  "devDependencies": {},
+  "description": ""
+}

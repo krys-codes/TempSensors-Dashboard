@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Korytarz",
+    "ip": "http://192.168.15.10"
+  },
+  {
+    "name": "Stołówka",
+    "ip": "http://192.168.15.11"
+  },
+  {
+    "name": "Biuro pietro",
+    "ip": "http://192.168.15.12"
+  },
+  {
+    "name": "Biuro parter",
+    "ip": "http://192.168.15.13"
+  },
+  {
+    "name": "Magazyn I",
+    "ip": "http://192.168.15.14"
+  },
+  {
+    "name": "Magazyn II",
+    "ip": "http://192.168.15.15"
+  },
+  {
+    "name": "Garaż",
+    "ip": "http://192.168.15.16"
+  }
+]
