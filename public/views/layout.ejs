@@ -1,45 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script type="text/javascript" src="./js/websocket.js"></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/css/style.css" rel="stylesheet" type="text/css" />
     <title>Temperatura</title>
-    <script>
-      // Create WebSocket connection.
-      const socket = new WebSocket("ws://localhost:8080");
-      // Connection opened
-      socket.addEventListener("open", function (event) {
-        console.log("Connected to WS Server");
-      });
-
-      // Listen for messages
-      socket.addEventListener("message", function (event) {
-        //message from server
-        //console.log("Message from server ", event.data);
-        const mainDiv = document.querySelector(".wrap");
-        const tempCard = document.createElement("div");
-        tempCard.setAttribute("class", "temp-card");
-
-        const tempIcon = document.createElement("div");
-        tempIcon.setAttribute("class", "temp-icon light");
-
-        const temperature = document.createElement("h1");
-        temperature.setAttribute("class", "temperature");
-        temperature.textContent = JSON.parse(event.data).temperature;
-
-        const ahref = document.createElement("a");
-        ahref.setAttribute("href", JSON.parse(event.data).ip);
-        ahref.setAttribute("target", "_blank");
-        ahref.textContent = JSON.parse(event.data).name;
-
-        mainDiv.appendChild(tempCard);
-        tempCard.appendChild(tempIcon);
-        tempCard.appendChild(ahref);
-        tempCard.appendChild(temperature);
-      });
-    </script>
   </head>
   <body>
     <div class="container">
