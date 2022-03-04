@@ -1,0 +1,10 @@
+
+If you would like to add app usage counter to the firebase..
+
+1. Add your app details inside firebaseConfig.js
+2. Go to firebase console, create a project (or head into your existing project).
+Navigate to:
+Project Settings-->Service accounts-->Firebase Admin SDK-->Choose Node.js-->Click on generate new private key
+
+This will download a json file required for firebase-admin. 
+Paste it here and rename to admin.json
